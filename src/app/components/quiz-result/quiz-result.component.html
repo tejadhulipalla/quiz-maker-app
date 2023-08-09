@@ -1,0 +1,18 @@
+<div class="quizResultPage">
+    <h4> RESULTS </h4>
+
+    <div *ngIf="quizResult" class="question-list">
+        <app-quiz-questions [results]="quizResult"></app-quiz-questions>
+    </div>
+
+    <div class="score-section">
+        <div class="score" [ngClass]="{'bg-red':correctAnswerCount <=1,
+        'bg-yellow':correctAnswerCount > 1 && correctAnswerCount <=3,
+        'bg-green':correctAnswerCount > 3 && correctAnswerCount <=5}">
+            <span>You scored {{correctAnswerCount}} out of {{totalQuestions}} </span>
+        </div>
+        <div class="create-new-quiz">
+            <button class="btn create-quiz-btn" (click)="navigateToCreateQuiz()"> Create a new quiz</button>
+        </div>
+    </div>
+</div>

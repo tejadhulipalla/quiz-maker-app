@@ -1,0 +1,33 @@
+.quizResultPage{
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    padding: 3% 5%;
+}
+.bg-red{
+    background-color: #ff0000;
+}
+.bg-yellow{
+    background-color: #ffff00;
+}
+.bg-green{
+    background-color: #008000;
+}
+.score{
+    width: 30%;
+    margin: 10px auto;
+}
+.score span{
+    font-weight: 700;
+}
+.create-quiz-btn{
+    background-color: #3a3e42;
+    color: #ffffff;
+    border-color: #3a3e42; 
+    width: 50%;
+}
+
+.create-quiz-btn:hover{
+    background-color: #3a3e42;
+    border-color: #3a3e42; 
+}
